@@ -1,0 +1,19 @@
+body {
+    background-color: #9c9c9c;
+}
+
+html {
+    width: 400px;
+    height: 500px;
+    border-style: round;
+}
+
+/* box */
+div {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid #444445;
+  border-style: round;
+  margin: 0;
+}

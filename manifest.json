@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "ClockIn",
+  "version": "1.0",
+  "description": "Productivity extension",
+  "background":
+  {
+    "scripts": ["https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js", "background.js"]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "tabs"
+  ]
+}

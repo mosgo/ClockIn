@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ClockIn</title>
+        <link rel="stylesheet" href="./popup.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <style>
+            .div-1{
+                margin-top: 20px;
+                background-color:#ddd;
+                border-radius: 50px;
+                box-shadow:  #8a8a8a 0 -25px 18px -14px inset,#6c6d6e 0 1px 2px,rgba(141, 141, 141, 0.15) 0 2px 4px,rgba(97, 97, 97, 0.15) 0 4px 8px,rgba(124, 124, 124, 0.15) 0 8px 16px,rgba(110, 110, 110, 0.15) 0 16px 32px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 7px 20px;
+                text-align: left;
+                text-decoration: none;
+                border: 0;
+                font-size: 16px;
+                display: inline-block;
+                word-wrap: break-word;
+                white-space: pre-wrap;
+            }
+
+            h1.textstyle{
+                font-family: tahoma
+            }
+
+            /* Border */
+            hr.rounded {
+                border-top: 2px solid #444445;
+                border-radius: 3px;
+            }
+
+            /* Custom CSS button */
+            .button-33 {
+            background-color: #b4d0d8;
+            border-radius: 100px;
+            box-shadow: #8a8a8a 0 -25px 18px -14px inset,#6c6d6e 0 1px 2px,rgba(141, 141, 141, 0.15) 0 2px 4px,rgba(97, 97, 97, 0.15) 0 4px 8px,rgba(124, 124, 124, 0.15) 0 8px 16px,rgba(110, 110, 110, 0.15) 0 16px 32px;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 7px 20px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 250ms;
+            border: 0;
+            font-size: 16px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            }
+
+            .button-33:hover {
+            box-shadow: #383838 0 -25px 18px -14px inset,#363636 0 1px 2px,#363636 0 2px 4px,#696969 0 4px 8px,#979797 0 8px 16px,#505050 0 16px 32px;
+            transform: scale(1.05) rotate(-0.25deg);
+            }
+
+            body{ font-family: Arial, sans-serif; text-align: center; padding: 10px;}
+            
+            #note {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            display: none;
+        }
+
+        #clock {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        </style>
+    </head>
+
+     <body>
+        <!--Icon-->
+        <img src="icon.png" width="15%" height="15%">
+
+        <div>
+        <!--Main document body-->
+         <h1 class = "textstyle" style="color: #444445;">ClockIn</h1> <br><br> <hr class="rounded">
+
+         <p id="clock" style="font-family: Arial, Helvetica, sans-serif;"></p>
+
+
+
+    <!-- Input Textbox and Submit Button -->
+    <input type="text" id="noteInput" placeholder="Type your note...">
+    <button class="button-33" id="submitBtn">Submit</button>
+
+    <!-- Notebox -->
+    <div class="div-1" id="note"></div>
+
+    <!--Scripts-->
+    <script src="jquery.min.js"></script>
+    <script src="popup.js"></script>
+
+     </body>
+
+</html>
